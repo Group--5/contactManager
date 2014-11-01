@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lime">#FFA4C400</color>
+    <color name="lime_accent">#FFA2C139</color>
+    <color name="green">#FF60A917</color>
+    <color name="green_accent">#FF339933</color>
+    <color name="emerald">#FF008400</color>
+    <color name="viridian">#FF00ABA9</color>
+    <color name="cyan">#FF1BA1E2</color>
+    <color name="cobalt">#FF0050EF</color>
+    <color name="indigo">#FF6A00FF</color>
+    <color name="violet">#FFAA00FF</color>
+    <color name="pink">#FFF472D0</color>
+    <color name="magenta">#FFD80073</color>
+    <color name="crimson">#FFA20025</color>
+    <color name="red">#FFE51400</color>
+    <color name="mango">#FFFA6800</color>
+    <color name="yellow">#FFE3C800</color>
+    <color name="brown">#FF82542C</color>
+    <color name="olive">#FF6D8764</color>
+    <color name="steel">#FF647687</color>
+    <color name="mauve">#FF766084</color>
+    <color name="sienna">#FFA0522D</color>
+
+
+
+
+
+
+
+
+
+
+</resources>

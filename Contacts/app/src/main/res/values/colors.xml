@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <color name="text">#FFFFFF</color>
+    <color name="active_bg">#0050EF</color>
+    <color name="bg">#1F1F1F</color>
+    <color name="gem">#66000000</color>
+</resources>
