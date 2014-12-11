@@ -22,6 +22,9 @@ public class HomeActivity extends Activity {
 
     int mSizeOfDisplayableSquare;
 
+    /**OnCreate method for HomeActivity. It is set up to accomodate the addition of new languages in
+     * future versions of this app. Buttons are rigged here to transfer to alpha sublist.
+     * UI is also scaled to your phone in this activity**/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,31 +52,80 @@ public class HomeActivity extends Activity {
         GridView a = (GridView) findViewById(R.id.gridView);
         //setting proper margins.
         a.setLayoutParams(new RelativeLayout.LayoutParams(5*getWidth() - (int) Math.floor(getWidth()*5/9), getHeight()));
+
+
         // Creating a Homescreen adapter and passing it width, and our character array to handel button generation.
         final HomeScreenArrayAdapter b = new HomeScreenArrayAdapter(this, test,ci.getContactCharList(), getWidth());
         a.setAdapter(b);
-        a.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (b.isActiveAtIndex(i)) {
-                    Intent j = new Intent(getApplicationContext(), AlphaSublistActivity.class);
-                    j.putExtra("schar",b.getCharacteratIndex(i));
-                    startActivity(j);
-                }
-            }
-        });
+        Log.d("HomeActivity", "Adapter Set. Same with onclick");
+        Log.d("ProbeItemClicks", "This statment is displayed before setting the onclick listener");
+
+
+a.setOnItemClickListener( new AdapterView.OnItemClickListener() {
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+        Log.d("ProbeItemClicks", "This statment is displayed before setting the onclick listener");
     }
+});
+//        a.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//
+//                Log.d("ProbeItemClicks", "This statment is displayed as our Items are being selected");
+//                System.out.println("==================================================");
+//                System.out.println("==================================================");
+//                System.out.println("==================================================");
+//            }
+//        });
 
+        Log.d("ProbeItemClicks", "This statment is displayed After setting the onclick listener");
+//        ;
+//
+//        a.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Log.d("Checking if button is active", "Trying");
+//
+//            }
+//        });
 
+//        a.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Log.d("Checking if button is active", "Trying");
+//
+//                if (b.isActiveAtIndex(i)) {
+//
+//                    Log.d("Checking if button is active", "It is");
+//                    Intent j = new Intent(getApplicationContext(), AlphaSublistActivity.class);
+//                    j.putExtra("schar",b.getCharacteratIndex(i));
+//                    startActivity(j);
+//                }
+//                else
+//                {
+//                    Log.d("Checking if button is active", "It isn't");
+//                }
+//            }
+//        });
+//    }
+        }
 
-    public int getWidth()
+/** Gets width of screen in pixels.
+ * @return width of screen**/
+    private int getWidth()
 {
     Display display = getWindowManager().getDefaultDisplay();
     Point size = new Point();
     display.getSize(size);
     int width = (int) Math.floor( size.x/5);
 return width;}
-  public int getHeight()
+    /**
+     * Gets Height of screen in pixels.
+     * @return height of screen
+     */
+
+  private int getHeight()
   {
       Display display = getWindowManager().getDefaultDisplay();
       Point size = new Point();

@@ -1,0 +1,168 @@
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="182dp"
+            android:id="@+id/imageView2"
+            android:clickable="true"
+            android:background="#333333" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Mobile"
+            android:id="@+id/textMobile"
+            android:textSize="15dp"
+            android:layout_alignBottom="@+id/editPhoneMobile"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textColor="#efefef" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editContactName"
+            android:layout_toStartOf="@+id/textMobile"
+            android:hint="Edit Name"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#efefef" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editPhoneMobile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editContactName"
+            android:hint="add number"
+            android:layout_toLeftOf="@+id/textMobile"
+            android:layout_toStartOf="@+id/textMobile"
+            android:textColor="#efefef" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Home"
+            android:id="@+id/textHome"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/editPhoneHome"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textColor="#efefef" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editPhoneHome"
+            android:layout_below="@+id/textMobile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/textHome"
+            android:layout_toStartOf="@+id/textHome"
+            android:hint="add number"
+            android:textColor="#efefef" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Work"
+            android:id="@+id/textWork"
+            android:layout_toStartOf="@+id/textHome"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/editPhoneWork"
+            android:layout_alignLeft="@+id/textHome"
+            android:layout_alignStart="@+id/textHome"
+            android:layout_alignRight="@+id/textMobile"
+            android:layout_alignEnd="@+id/textMobile"
+            android:textColor="#efefef" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editPhoneWork"
+            android:layout_toStartOf="@+id/textMobile"
+            android:hint="add number"
+            android:layout_below="@+id/editPhoneHome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#efefef" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/editEmail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editPhoneWork"
+            android:layout_alignRight="@+id/textMobile"
+            android:layout_alignEnd="@+id/textMobile"
+            android:hint="add email"
+            android:textColor="#efefef" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:layout_toStartOf="@+id/button2"
+            android:layout_toLeftOf="@+id/button2"
+            android:layout_below="@+id/editEmail" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button2"
+            android:layout_above="@+id/button3"
+            android:layout_alignRight="@+id/editPhoneWork"
+            android:layout_alignEnd="@+id/editPhoneWork"
+            android:layout_marginRight="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+</ScrollView>

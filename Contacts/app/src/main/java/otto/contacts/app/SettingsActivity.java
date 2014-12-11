@@ -5,18 +5,15 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 /**
- * Created by study on 10/4/14.
- */
+ * @deprecated
+ * This class has not been implemented YET
+ * */
 public class SettingsActivity extends Activity{
 
     @Override public void onCreate(Bundle s)
     {
         super.onCreate(s);
         setContentView(R.layout.settings_layout);
-
-
-
-
     }
 
 }

@@ -4,20 +4,88 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:layout_weight="60"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/stylizedChar" />
-    </RelativeLayout>
+            android:text="people"
+            android:id="@+id/people"
+            android:textColor="#efefef"
+            android:textSize="64dp" />
 
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="groups"
+            android:id="@+id/gourpsTextButton"
+            android:layout_weight="47"
+            android:textSize="32dp"
+            android:textColor="#7f7f7f"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView" />
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_weight="26"
+            android:layout_height="wrap_content"
+            android:id="@+id/alphaContactListView"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center_vertical|center_horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton"
+            android:layout_margin="5dp"
+            android:background="@drawable/aicon"
+            android:layout_marginRight="10dp" />
+
+        <TextView android:layout_width="16dp"
+            android:layout_height="match_parent"
+
+            >
+            </TextView>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton2"
+            android:layout_margin="5dp"
+            android:background="@drawable/search"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
 </LinearLayout>

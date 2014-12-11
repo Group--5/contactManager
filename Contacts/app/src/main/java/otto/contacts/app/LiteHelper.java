@@ -6,7 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by study on 10/18/14.
+ * @deprecated
+ * This class is not yet implemented. To be used to save UI settings in the future
  */
 public class LiteHelper extends SQLiteOpenHelper{
 
